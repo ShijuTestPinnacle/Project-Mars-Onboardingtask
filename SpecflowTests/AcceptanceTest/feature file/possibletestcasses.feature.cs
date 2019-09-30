@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace SpecflowTests
+namespace SpecflowTests.AcceptanceTest.FeatureFile
 {
     using TechTalk.SpecFlow;
     
@@ -62,7 +62,7 @@ namespace SpecflowTests
             if (((testRunner.FeatureContext != null) 
                         && (testRunner.FeatureContext.FeatureInfo.Title != "possible testcasses")))
             {
-                global::SpecflowTests.PossibleTestcassesFeature.FeatureSetup(null);
+                global::SpecflowTests.AcceptanceTest.FeatureFile.PossibleTestcassesFeature.FeatureSetup(null);
             }
         }
         

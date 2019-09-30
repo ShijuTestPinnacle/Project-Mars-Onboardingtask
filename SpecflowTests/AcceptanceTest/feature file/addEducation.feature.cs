@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace SpecflowTests.AcceptanceTest
+namespace SpecflowTests.AcceptanceTest.FeatureFile
 {
     using TechTalk.SpecFlow;
     
@@ -18,14 +18,14 @@ namespace SpecflowTests.AcceptanceTest
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.3.2.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class AddskillsFeature
+    public partial class AddEducationFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
         private Microsoft.VisualStudio.TestTools.UnitTesting.TestContext _testContext;
         
-#line 1 "addskills.feature"
+#line 1 "addEducation.feature"
 #line hidden
         
         public virtual Microsoft.VisualStudio.TestTools.UnitTesting.TestContext TestContext
@@ -44,8 +44,8 @@ namespace SpecflowTests.AcceptanceTest
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(null, 0);
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "addskills", "\tIn order to update my skills\r\n\tAs a skill trader\r\n\tI should be able add all skil" +
-                    "ls that I know", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "addEducation", "\tIn order to update my profile details\r\n\tAs a skill trader\r\n\tI should be able to " +
+                    "add my Education details and validate", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -60,9 +60,9 @@ namespace SpecflowTests.AcceptanceTest
         public virtual void TestInitialize()
         {
             if (((testRunner.FeatureContext != null) 
-                        && (testRunner.FeatureContext.FeatureInfo.Title != "addskills")))
+                        && (testRunner.FeatureContext.FeatureInfo.Title != "addEducation")))
             {
-                global::SpecflowTests.AcceptanceTest.AddskillsFeature.FeatureSetup(null);
+                global::SpecflowTests.AcceptanceTest.FeatureFile.AddEducationFeature.FeatureSetup(null);
             }
         }
         
@@ -84,29 +84,29 @@ namespace SpecflowTests.AcceptanceTest
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Add skills and validate")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "addskills")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("AddEducation and Validate")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "addEducation")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("PD")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("addskill")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("add")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("education")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("automate")]
-        public virtual void AddSkillsAndValidate()
+        public virtual void AddEducationAndValidate()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add skills and validate", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("AddEducation and Validate", new string[] {
                         "PD",
-                        "addskill",
-                        "",
+                        "add",
+                        "education",
                         "automate"});
 #line 7
 this.ScenarioSetup(scenarioInfo);
 #line 8
- testRunner.Given("I have navigated to profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I have navigated to the profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 9
- testRunner.And("I have navigated to the skill tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I have navigated to the Educationl tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 10
- testRunner.When("I click on the add new button and add new skills", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I click on the add new button and add new Education details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 11
- testRunner.Then("I should be able to view added skills on my profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I should be able to view added Education details on my profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

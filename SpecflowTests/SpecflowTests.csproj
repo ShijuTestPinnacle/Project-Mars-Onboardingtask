@@ -95,32 +95,32 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="AcceptanceTest\Addcertification.cs" />
-    <Compile Include="AcceptanceTest\AddEducation.cs" />
-    <Compile Include="AcceptanceTest\AddLanguage.cs" />
-    <Compile Include="AcceptanceTest\Addskills.cs" />
-    <Compile Include="AcceptanceTest\addskills.feature.cs">
+    <Compile Include="AcceptanceTest\Hookup file\Addcertification.cs" />
+    <Compile Include="AcceptanceTest\Hookup file\AddEducation.cs" />
+    <Compile Include="AcceptanceTest\Hookup file\AddLanguage.cs" />
+    <Compile Include="AcceptanceTest\Hookup file\Addskills.cs" />
+    <Compile Include="AcceptanceTest\feature file\addskills.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>addskills.feature</DependentUpon>
     </Compile>
-    <Compile Include="AcceptanceTest\addEducation.feature.cs">
+    <Compile Include="AcceptanceTest\feature file\addEducation.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>addEducation.feature</DependentUpon>
     </Compile>
-    <Compile Include="AcceptanceTest\addcertification.feature.cs">
+    <Compile Include="AcceptanceTest\feature file\addcertification.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>addcertification.feature</DependentUpon>
     </Compile>
-    <Compile Include="possibletestcasses.feature.cs">
+    <Compile Include="AcceptanceTest\feature file\possibletestcasses.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>possibletestcasses.feature</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AcceptanceTest\SpecFlowFeature1.feature.cs">
+    <Compile Include="AcceptanceTest\feature file\SpecFlowFeature1.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SpecFlowFeature1.feature</DependentUpon>
@@ -128,25 +128,25 @@
     <Compile Include="Utils\Start.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="AcceptanceTest\addskills.feature">
+    <None Include="AcceptanceTest\feature file\addskills.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>addskills.feature.cs</LastGenOutput>
     </None>
-    <None Include="AcceptanceTest\addEducation.feature">
+    <None Include="AcceptanceTest\feature file\addEducation.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>addEducation.feature.cs</LastGenOutput>
     </None>
-    <None Include="AcceptanceTest\addcertification.feature">
+    <None Include="AcceptanceTest\feature file\addcertification.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>addcertification.feature.cs</LastGenOutput>
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="AcceptanceTest\SpecFlowFeature1.feature">
+    <None Include="AcceptanceTest\feature file\SpecFlowFeature1.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>SpecFlowFeature1.feature.cs</LastGenOutput>
     </None>
-    <None Include="possibletestcasses.feature">
+    <None Include="AcceptanceTest\feature file\possibletestcasses.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>possibletestcasses.feature.cs</LastGenOutput>
     </None>

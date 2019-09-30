@@ -12,13 +12,13 @@ namespace SpecflowPages
         public static string Url = "http://www.skillswap.pro/";
 
         //ScreenshotPath
-        public static string ScreenshotPath = @"C:\Users\Abishake Vipinan\source\repos\project mars\SpecflowTests-Base\SpecflowTests\SpecflowPages\TestReports\Screenshots\";
+        public static string ScreenshotPath = AppDomain.CurrentDomain.BaseDirectory.Replace(@"SpecflowTests\bin\Debug",@"SpecflowPages\TestReports\Screenshots\");
 
         //ExtentReportsPath
-        public static string ReportsPath = @"C:\Users\Abishake Vipinan\source\repos\project mars\SpecflowTests-Base\SpecflowTests\SpecflowPages\TestReports\Test1.html";
+        public static string ReportsPath = AppDomain.CurrentDomain.BaseDirectory.Replace(@"SpecflowTests\bin\Debug", @"SpecflowPages\TestReports\Test1.html");
 
         //ReportXML Path
-        public static string ReportXMLPath = @"C:\Users\Abishake Vipinan\source\repos\project mars\SpecflowTests-Base\SpecflowTests\SpecflowPages\TestReports\ReportXML1.xml";
+        public static string ReportXMLPath = AppDomain.CurrentDomain.BaseDirectory.Replace(@"SpecflowTests\bin\Debug", @"SpecflowPages\TestReports\ReportXML1.xml");
 
       
 

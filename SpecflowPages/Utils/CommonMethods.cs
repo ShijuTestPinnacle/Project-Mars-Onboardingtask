@@ -17,14 +17,18 @@ namespace SpecflowPages
         #region screenshots
         public class SaveScreenShotClass
         {
+           
             public static string SaveScreenshot( IWebDriver driver, string ScreenShotFileName) // Definition
+
             {
+                //Directory.GetCurrentDirectory();
                 var folderLocation = (ConstantUtils.ScreenshotPath);
 
                 if (!System.IO.Directory.Exists(folderLocation))
                 {
                     System.IO.Directory.CreateDirectory(folderLocation);
                 }
+               
 
                 var screenShot = ((ITakesScreenshot)driver).GetScreenshot();
                 var fileName = new StringBuilder(folderLocation);
@@ -46,7 +50,10 @@ namespace SpecflowPages
         public static ExtentReports extent;
         public static void ExtentReports()
         {
+            //Directory.GetCurrentDirectory();
+            
             extent = new ExtentReports(ConstantUtils.ReportsPath, true, DisplayOrder.NewestFirst);
+            
             extent.LoadConfig(ConstantUtils.ReportXMLPath);
         }
 
