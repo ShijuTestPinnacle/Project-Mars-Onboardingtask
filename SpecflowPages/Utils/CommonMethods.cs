@@ -85,7 +85,7 @@ namespace SpecflowPages
 
             }
         }
-        public static bool isElementPresent(By by)
+        public static bool IsElementPresent(By by)
         {
             try
             {

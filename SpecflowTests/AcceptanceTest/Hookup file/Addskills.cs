@@ -70,7 +70,7 @@ namespace SpecflowTests.AcceptanceTest
                     for (int i = 1; i <= 10; i++)
                     {
                         string ExpectedValue = "automation";
-                        string ActualValue = Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[3]/div/div[2]/div/table/tbody[" + i + "]/tr/td[1]")).Text;
+                        string ActualValue = Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[3]/div/div[2]/div/table/tbody[" +i + "]/tr/td[1]")).Text;
                         Thread.Sleep(500);
                         if (ExpectedValue == ActualValue)
                         {

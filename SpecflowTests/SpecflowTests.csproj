@@ -95,6 +95,16 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="AcceptanceTest\feature file\Deleteskill.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Deleteskill.feature</DependentUpon>
+    </Compile>
+    <Compile Include="AcceptanceTest\feature file\Editskills.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Editskills.feature</DependentUpon>
+    </Compile>
     <Compile Include="AcceptanceTest\Hookup file\Addcertification.cs" />
     <Compile Include="AcceptanceTest\Hookup file\AddEducation.cs" />
     <Compile Include="AcceptanceTest\Hookup file\AddLanguage.cs" />
@@ -119,6 +129,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>possibletestcasses.feature</DependentUpon>
     </Compile>
+    <Compile Include="AcceptanceTest\Hookup file\DeleteskillSteps.cs" />
+    <Compile Include="AcceptanceTest\Hookup file\EditskillsSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AcceptanceTest\feature file\SpecFlowFeature1.feature.cs">
       <AutoGen>True</AutoGen>
@@ -139,6 +151,14 @@
     <None Include="AcceptanceTest\feature file\addcertification.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>addcertification.feature.cs</LastGenOutput>
+    </None>
+    <None Include="AcceptanceTest\feature file\Deleteskill.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Deleteskill.feature.cs</LastGenOutput>
+    </None>
+    <None Include="AcceptanceTest\feature file\Editskills.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Editskills.feature.cs</LastGenOutput>
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
