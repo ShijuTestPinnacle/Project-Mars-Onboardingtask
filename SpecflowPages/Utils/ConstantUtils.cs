@@ -18,7 +18,7 @@ namespace SpecflowPages
         public static string ReportsPath = AppDomain.CurrentDomain.BaseDirectory.Replace(@"SpecflowTests\bin\Debug", @"SpecflowPages\TestReports\Test1.html");
 
         //ReportXML Path
-        public static string ReportXMLPath = AppDomain.CurrentDomain.BaseDirectory.Replace(@"SpecflowTests\bin\Debug", @"SpecflowPages\TestReports\ReportXML1.xml");
+        public static string ReportXMLPath = AppDomain.CurrentDomain.BaseDirectory.Replace(@"SpecflowTests\bin\Debug", @"SpecflowPages\TestReports\ReportXML.xml");
 
       
 
