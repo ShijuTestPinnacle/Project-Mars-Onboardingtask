@@ -78,8 +78,11 @@
       <HintPath>..\packages\SpecFlow.2.3.2\lib\net45\TechTalk.SpecFlow.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="WebDriver, Version=3.10.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Selenium.WebDriver.3.10.0\lib\net45\WebDriver.dll</HintPath>
+    <Reference Include="WebDriver, Version=3.14.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.14.0\lib\net45\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.14.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.14.0\lib\net45\WebDriver.Support.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Choose>
@@ -95,15 +98,35 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="AcceptanceTest\feature file\DeleteCertification.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeleteCertification.feature</DependentUpon>
+    </Compile>
+    <Compile Include="AcceptanceTest\feature file\DeleteEducation.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeleteEducation.feature</DependentUpon>
+    </Compile>
     <Compile Include="AcceptanceTest\feature file\Deleteskill.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Deleteskill.feature</DependentUpon>
     </Compile>
+    <Compile Include="AcceptanceTest\feature file\EditCertification.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditCertification.feature</DependentUpon>
+    </Compile>
     <Compile Include="AcceptanceTest\feature file\Editskills.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Editskills.feature</DependentUpon>
+    </Compile>
+    <Compile Include="AcceptanceTest\feature file\EditEducation.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditEducation.feature</DependentUpon>
     </Compile>
     <Compile Include="AcceptanceTest\Hookup file\Addcertification.cs" />
     <Compile Include="AcceptanceTest\Hookup file\AddEducation.cs" />
@@ -129,7 +152,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>possibletestcasses.feature</DependentUpon>
     </Compile>
+    <Compile Include="AcceptanceTest\Hookup file\DeletecertificationSteps.cs" />
+    <Compile Include="AcceptanceTest\Hookup file\DeleteEducationSteps.cs" />
     <Compile Include="AcceptanceTest\Hookup file\DeleteskillSteps.cs" />
+    <Compile Include="AcceptanceTest\Hookup file\EditCertificationSteps.cs" />
+    <Compile Include="AcceptanceTest\Hookup file\EditEducationSteps.cs" />
     <Compile Include="AcceptanceTest\Hookup file\EditskillsSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AcceptanceTest\feature file\SpecFlowFeature1.feature.cs">
@@ -152,13 +179,29 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>addcertification.feature.cs</LastGenOutput>
     </None>
+    <None Include="AcceptanceTest\feature file\DeleteCertification.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DeleteCertification.feature.cs</LastGenOutput>
+    </None>
+    <None Include="AcceptanceTest\feature file\DeleteEducation.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DeleteEducation.feature.cs</LastGenOutput>
+    </None>
     <None Include="AcceptanceTest\feature file\Deleteskill.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Deleteskill.feature.cs</LastGenOutput>
     </None>
+    <None Include="AcceptanceTest\feature file\EditCertification.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>EditCertification.feature.cs</LastGenOutput>
+    </None>
     <None Include="AcceptanceTest\feature file\Editskills.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Editskills.feature.cs</LastGenOutput>
+    </None>
+    <None Include="AcceptanceTest\feature file\EditEducation.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>EditEducation.feature.cs</LastGenOutput>
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
