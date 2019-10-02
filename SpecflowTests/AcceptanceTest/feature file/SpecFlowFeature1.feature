@@ -9,9 +9,4 @@ Scenario: Check if user could able to add a language
 	When I add a new language
 	Then that language should be displayed on my listings
 	
-	Scenario: Update Language and validate
-
-	Given  I  have navigated to the language tab under the profile page
-	And I click on the write icon  near the added language
-	When I update  language and click update
-	Then I should be able to see the updated language in my profile page
+	

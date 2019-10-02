@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Framework;
+using OpenQA.Selenium;
 using RelevantCodes.ExtentReports;
 using SpecflowPages;
 using System;
@@ -44,15 +45,16 @@ namespace SpecflowTests.AcceptanceTest.Hookup_file
 
                 CommonMethods.ElementIsVisible(Driver.driver, "//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/table/tbody[1]/tr/td[2]", "XPath");
 
-                string ExpectedValue = "abcd";
+                //string ExpectedValue = "abcd";
                 string ActualValue = Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/table/tbody[1]/tr/td[2]")).Text;
                 Thread.Sleep(1500);
-                if (ExpectedValue != ActualValue)
-                {
-                    CommonMethods.test.Log(LogStatus.Pass, "Test Passed, Education entry successfully removed");
+                Assert.That(ActualValue, Is.Not.EqualTo("abcd"));
+                // if (ExpectedValue != ActualValue)
+                //{
+                CommonMethods.test.Log(LogStatus.Pass, "Test Passed, Education entry successfully removed");
                     SaveScreenShotClass.SaveScreenshot(Driver.driver, "DeletedEducation");
 
-                }
+                //}
 
                 // }
 

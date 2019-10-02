@@ -1,4 +1,6 @@
-﻿using OpenQA.Selenium;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
+using OpenQA.Selenium;
 using RelevantCodes.ExtentReports;
 using System;
 using System.Collections.Generic;
@@ -27,26 +29,27 @@ namespace SpecflowPages.Utils
             Driver.driver.FindElement(By.XPath("/html/body/div[2]/div/div/div[1]/div/div[2]/input")).SendKeys("SydneyQa2018");
             Thread.Sleep(1000);
             //Click on Login Button
-            Driver.driver.FindElement(By.XPath("/html/body/div[2]/div/div/div[1]/div/div[4]/button")).Click();
+            Driver.driver.FindElement(By.XPath(".//*[@class='fluid ui teal button']")).Click();
 
             //string msg = "Add New Job";
             //string Actualmsg = Driver.driver.FindElement(By.XPath("//*[@id='addnewjob']")).Text;
 
             //if (msg == Actualmsg)
             //{
-                //Console.WriteLine("Test Passed");
-                //CommonMethods.ExtentReports();
-                //Thread.Sleep(500);
-                //test = CommonMethods.extent.StartTest("Login with valid data");
-                //Thread.Sleep(1000);
-                //CommonMethods.test.Log(LogStatus.Pass, "Test Passed");
-                //SaveScreenShotClass.SaveScreenshot(Driver.driver, "HomePage");
+            //Console.WriteLine("Test Passed");
+            //CommonMethods.ExtentReports();
+            //Thread.Sleep(500);
+            //test = CommonMethods.extent.StartTest("Login with valid data");
+            //Thread.Sleep(1000);
+            //CommonMethods.test.Log(LogStatus.Pass, "Test Passed");
+            //SaveScreenShotClass.SaveScreenshot(Driver.driver, "HomePage");
             //}
             //else
             //{
-                //Console.WriteLine("Test Failed");
-                //CommonMethods.test.Log(LogStatus.Fail, "Test Failed");
+            //Console.WriteLine("Test Failed");
+            //CommonMethods.test.Log(LogStatus.Fail, "Test Failed");
             //}
+           
         }
 
     }

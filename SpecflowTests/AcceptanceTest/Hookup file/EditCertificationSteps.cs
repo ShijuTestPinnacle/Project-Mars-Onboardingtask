@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Framework;
+using OpenQA.Selenium;
 using RelevantCodes.ExtentReports;
 using SpecflowPages;
 using System;
@@ -32,7 +33,7 @@ namespace SpecflowTests.AcceptanceTest.Hookup_file
             Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/table/tbody[1]/tr/td[4]/span[1]/i")).Click();
             IWebElement certiname = Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/table/tbody[1]/tr/td/div/div/div[1]/input"));
             certiname.Clear();
-            certiname.SendKeys("volunteer");
+            certiname.SendKeys("connect");
             Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/table/tbody[1]/tr/td/div/span/input[1]")).Click();
 
         }
@@ -49,21 +50,22 @@ namespace SpecflowTests.AcceptanceTest.Hookup_file
 
                 //Thread.Sleep(1000);
                 CommonMethods.ElementIsVisible(Driver.driver, "//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/table/tbody[1]/tr/td[1]", "XPath");
-                string ExpectedValue = "volunteer";
+                //string ExpectedValue = "connect";
                 string ActualValue = Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/table/tbody[1]/tr/td[1]")).Text;
                 Thread.Sleep(1500);
-                if (ExpectedValue == ActualValue)
-                {
+                Assert.That(ActualValue, Is.EqualTo("connect"));
+               // if (ExpectedValue == ActualValue)
+                //{
                     CommonMethods.test.Log(LogStatus.Pass, "Test Passed, updated certification Successfully");
                     SaveScreenShotClass.SaveScreenshot(Driver.driver, "certification updated");
-                    return;
-                }
+                    
+                //}
 
                 // }
 
                 // else
                 // CommonMethods.test.Log(LogStatus.Fail, "Test Failed");
-
+                
             }
             catch (Exception e)
             {

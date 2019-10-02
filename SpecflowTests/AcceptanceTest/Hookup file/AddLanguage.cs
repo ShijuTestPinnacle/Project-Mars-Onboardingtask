@@ -27,7 +27,7 @@ namespace SpecflowTests.AcceptanceTest
         public void WhenIAddANewLanguage()
         {
             //Click on Add New button
-            Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[2]/div/div[2]/div/table/thead/tr/th[3]/div")).Click();
+            Driver.driver.FindElement(By.XPath(".//*[@class='ui bottom attached tab segment active tooltip-target']/div[1]/div[2]/div[1]/table[1]/thead/tr[1]/th[3]/div[1]")).Click();
 
             //Add Language
             Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[2]/div/div[2]/div/div/div[1]/input")).SendKeys("English");
